@@ -1,88 +1,175 @@
-/* =========================
-   RESPONSIVE DESIGN
-   ========================= */
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Tablets */
+/* ===== HEADER ===== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav_bar {
+  display: flex;
+  background-color: darkgray;
+  padding: 0 15px;
+  flex-wrap: wrap;
+}
+
+span {
+  padding: 3px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  width: 30%;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ul_container {
+  color: white;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-evenly;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.ul_container li {
+  padding: 8px 5px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li:hover {
+  color: aqua;
+  border-bottom: 3px solid rgb(110, 220, 240);
+}
+
+/* ===== HERO SECTION ===== */
+.section1 {
+  font-size: 1.5rem;
+  min-height: 555px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: url("https://themewagon.github.io/Kelly/assets/img/hero-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.btn1 {
+  width: 150px;
+  height: 30px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: rgb(9, 253, 192);
+  border-radius: 20px;
+  border: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ========================================= */
+/* ===== RESPONSIVE MEDIA QUERIES ========= */
+/* ========================================= */
+
+/* ---- TABLETS (max 768px) ---- */
 @media (max-width: 768px) {
+  span {
+    font-size: 22px;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    justify-content: center;
+  }
 
   .nav_bar {
     flex-direction: column;
     align-items: center;
-    padding: 10px 0;
-  }
-
-  span {
-    width: 100%;
-    height: auto;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-
-  .ul_container {
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 5px 0;
-  }
-
-  .section1 {
-    height: auto;
-    min-height: 500px;
-    padding: 80px 20px;
-    background-position: center;
-  }
-
-  .btn1 {
-    width: 140px;
-  }
-
-  footer {
-    height: auto;
-    min-height: 150px;
-    padding: 30px 20px;
-    text-align: center;
-  }
-}
-
-
-/* Mobile phones */
-@media (max-width: 480px) {
-
-  .nav_bar {
     padding: 10px;
   }
 
-  span {
-    font-size: 20px;
-    width: 100%;
-  }
-
   .ul_container {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 12px;
+    padding: 10px 0;
   }
 
   .ul_container li {
-    width: 100%;
-    text-align: center;
-    padding: 5px;
+    font-size: 14px;
   }
 
   .section1 {
-    min-height: 450px;
-    padding: 60px 15px;
     font-size: 1.2rem;
-    background-position: center;
+    min-height: 450px;
+  }
+}
+
+/* ---- MOBILE PHONES (max 480px) ---- */
+@media (max-width: 480px) {
+  span {
+    font-size: 20px;
+    padding: 8px 0;
+  }
+
+  .ul_container {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .ul_container li {
+    font-size: 15px;
+    padding: 6px 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .section1 {
+    font-size: 1rem;
+    min-height: 400px;
+    padding: 15px;
+  }
+
+  .section1 h4 {
+    font-size: 1.5rem;
   }
 
   .btn1 {
     width: 130px;
-    height: 35px;
+    height: 32px;
     font-size: 14px;
   }
 
   footer {
-    min-height: 120px;
-    padding: 20px;
+    min-height: 150px;
+    font-size: 14px;
   }
 }

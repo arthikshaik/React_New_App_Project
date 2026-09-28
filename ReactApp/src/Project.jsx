@@ -7,7 +7,7 @@ function Project(){
         <nav class="nav_bar">
             <span>Arthik</span>
               <ul class="ul_container">
-                <li><a href="./Portfolio/index.html" target="_self">HOME</a></li>
+                <li><a href="./index.html" target="_self">HOME</a></li>
                 <li><a href="./About.html" target="_self">ABOUT</a></li>
                 <li><a href="./Resume.html" target="_self">RESUME</a></li>
                 <li><a href="./skills.html" target="_self">SKILLS</a></li>
