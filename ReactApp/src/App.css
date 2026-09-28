@@ -1,78 +1,88 @@
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-header{
-  /* border: 2px solid white; */
-  position: sticky;
-  top: 0%;
-}
-span{
-  padding: 3px;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 26px;
-  width: 30%;
-  height:40px;
-  text-align: center;
-  
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+  .nav_bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  span {
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .ul_container {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5px 0;
+  }
+
+  .section1 {
+    height: auto;
+    min-height: 500px;
+    padding: 80px 20px;
+    background-position: center;
+  }
+
+  .btn1 {
+    width: 140px;
+  }
+
+  footer {
+    height: auto;
+    min-height: 150px;
+    padding: 30px 20px;
+    text-align: center;
+  }
 }
 
 
-.nav_bar{
-display: flex;
-background-color:darkgray;
+/* Mobile phones */
+@media (max-width: 480px) {
 
+  .nav_bar {
+    padding: 10px;
+  }
 
-}
-.ul_container{
-  color: white;
-  display: flex;
-  align-items:center;
-  width:70%;
-  justify-content: space-evenly;
-  list-style-type: none;
-  /* border:2px solid ; */
-}
-a{
-  color: white;
-  text-decoration: none;
-}
+  span {
+    font-size: 20px;
+    width: 100%;
+  }
 
-.section1{
-  font-size: 1.5rem;
-  /* border: 2px solid red; */
-  height: 555px;
-  text-align: center;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  background: url("https://themewagon.github.io/Kelly/assets/img/hero-bg.jpg") no-repeat ;
-  background-size: cover;
-}
-.btn1{
-  width: 150px;
-  height: 30px;
-  color: white;
-  font-size: 15px;
-  cursor:pointer;
-  background-color: rgb(9, 253, 192);
-  border: 1px solid black;
-  border-radius: 20px;
-  border: none;
-}
-footer {
-  /* border: 2px solid; */
-  height: 200px;
-  /* text-align: center; */
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  background-color: darkgray;
-}
-li:hover{
-  color: aqua;
-  border-bottom:3px solid rgb(110, 220, 240) ;
-  
+  .ul_container {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .ul_container li {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .section1 {
+    min-height: 450px;
+    padding: 60px 15px;
+    font-size: 1.2rem;
+    background-position: center;
+  }
+
+  .btn1 {
+    width: 130px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  footer {
+    min-height: 120px;
+    padding: 20px;
+  }
 }
