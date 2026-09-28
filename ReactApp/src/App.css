@@ -1,0 +1,78 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header{
+  /* border: 2px solid white; */
+  position: sticky;
+  top: 0%;
+}
+span{
+  padding: 3px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  width: 30%;
+  height:40px;
+  text-align: center;
+  
+}
+
+
+.nav_bar{
+display: flex;
+background-color:darkgray;
+
+
+}
+.ul_container{
+  color: white;
+  display: flex;
+  align-items:center;
+  width:70%;
+  justify-content: space-evenly;
+  list-style-type: none;
+  /* border:2px solid ; */
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.section1{
+  font-size: 1.5rem;
+  /* border: 2px solid red; */
+  height: 555px;
+  text-align: center;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  background: url("https://themewagon.github.io/Kelly/assets/img/hero-bg.jpg") no-repeat ;
+  background-size: cover;
+}
+.btn1{
+  width: 150px;
+  height: 30px;
+  color: white;
+  font-size: 15px;
+  cursor:pointer;
+  background-color: rgb(9, 253, 192);
+  border: 1px solid black;
+  border-radius: 20px;
+  border: none;
+}
+footer {
+  /* border: 2px solid; */
+  height: 200px;
+  /* text-align: center; */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color: darkgray;
+}
+li:hover{
+  color: aqua;
+  border-bottom:3px solid rgb(110, 220, 240) ;
+  
+}
